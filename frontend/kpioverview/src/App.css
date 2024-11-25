@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.SideMenuAndPageContent {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: hidden; 
+}
+
+.ProjectContent{
+  padding-left: 12px;
+  margin-top: 12px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fullscreen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-card {
+  width: 80%;
+  height: 80%;
+  position: relative; /* Necessary for close button positioning */
+  background: white; /* Ensure background color is white */
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white; /* Background color for the circular button */
+  border: 2px solid #ccc; /* Border color for the circular button */
+  border-radius: 50%; /* Circular shape */
+  width: 40px; /* Width of the circular button */
+  height: 40px; /* Height of the circular button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem; /* Font size of the arrow symbol */
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: for a slight shadow effect */
+}
+
+.left {
+  left: -60px;  /* Ajusta este valor según sea necesario para posicionar correctamente */
+}
+
+.right {
+  right: -60px;  /* Ajusta este valor según sea necesario para posicionar correctamente */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Slightly darker background */
+  z-index: 999; /* Ensure it is below the fullscreen container */
+}
+
+.chart-type-selector {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.chart-type-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chart-type-button:hover {
+  background-color: #e0e0e0;
+}
+
+.chart-type-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.chart-type-label {
+  font-size: 14px;
+}
+
+

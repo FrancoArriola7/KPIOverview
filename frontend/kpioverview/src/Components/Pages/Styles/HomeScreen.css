@@ -1,0 +1,41 @@
+/* Fondo blanco y letras negras */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos del contenedor */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos del encabezado con animación */
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Estilos de la descripción con animación */
+  .description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  /* Animación de desvanecimiento */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

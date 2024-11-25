@@ -1,0 +1,25 @@
+.login-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .password-field {
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-field .btn {
+    margin-left: -45px;
+    z-index: 10;
+  }
+  
